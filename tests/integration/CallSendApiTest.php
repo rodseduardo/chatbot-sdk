@@ -10,10 +10,10 @@ class CallSendApiTest extends TestCase
     public function test_make_request()
     {
         /**
-         * @expectedExcpetion \GuzzleHttp\Exception\ClientException
+         * @expectedExcpetion GuzzleHttp\Exception\ClientException
          */
         $message = (new Text(1))->message('Hiii');
-        (new allSendApiTest('46464'))->make($message);
+        (new CallSendApi('46464'))->make($message);
     }
 
 }
